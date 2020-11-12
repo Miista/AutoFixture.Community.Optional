@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>AutoFixture.Optional</id>
+        <version>1.0.0-alpha</version>
+        <description>Description</description>
+        <authors>Søren Guldmund</authors>
+
+        <!-- Optional elements -->
+        <!-- ... -->
+		<dependencies>
+			<group targetFramework="netstandard2.0">
+				<dependency id="AutoFixture" version="4.11.0" />
+				<dependency id="Optional" version="4.0.0" />
+			</group>
+		</dependencies>
+    </metadata>
+    <!-- Optional 'files' node -->
+	<files>
+		<file src="netstandard2.0\*.dll" target="lib\netstandard2.0" />
+		<file src="netstandard2.0\*.xml" target="lib\netstandard2.0" />
+	</files>
+</package>
