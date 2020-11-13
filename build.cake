@@ -1,50 +1,62 @@
 var target = Argument("target", "Default");
 
-Task("Default")
-    .IsDependentOn("Build")
-    .IsDependentOn("Test")
-    .Does(() =>
-    {
-    });
+var solutionFile = "./src/AutoFixture.Optional.sln";
 
 Task("Build")
-    .Does(() =>
-    {
-		var buildSettings = new MSBuildSettings()
-			.SetConfiguration("Release")
-			.SetVerbosity(Verbosity.Minimal)
-			.WithRestore();
+  .Does(() =>
+{
+  var buildSettings = new DotNetCoreBuildSettings
+  {
+    Configuration = "Release",
+    Verbosity = DotNetCoreVerbosity.Minimal
+  };
+  
+  DotNetCoreBuild(solutionFile, buildSettings);
 
-        MSBuild("./AutoFixture.Optional.sln",  buildSettings);
-    });
+});
 
 Task("Test")
-    .IsDependentOn("Build")
-    .Does(() =>
-    {
-        MSTest("./AutoFixture.Optional.Tests/AutoFixture.Optional.Tests/bin/release/**/Optional.Tests.dll");
-    });
+  .Does(() =>
+{
+  var settings = new DotNetCoreTestSettings
+  {
+    Verbosity = DotNetCoreVerbosity.Minimal
+  };
+
+  DotNetCoreTest(solutionFile, settings);
+})
+;
+
+Task("Default")
+  .IsDependentOn("Build")
+  .IsDependentOn("Test")
+;
 
 Task("Pack")
-    .IsDependentOn("Build")
-    .IsDependentOn("Test")
-    .Does(() =>
-    {
-        Pack("AutoFixture.Optional", new [] { "netstandard2.0", "netcoreapp2.0" });
-    });
-    
+  .IsDependentOn("Build")
+  .IsDependentOn("Test")
+  .Does(() =>
+{
+  Pack("AutoFixture.Optional", new [] { "netstandard2.0" });
+})
+;
+
 RunTarget(target);
 
 public void Pack(string projectName, string[] targets) 
 {
-	var buildSettings = new DotNetCoreMSBuildSettings()
-			.WithProperty("NuspecFile", "../nuget/AutoFixture.Optional.nuspec")
-			.WithProperty("NuspecBasePath", "bin/Release");
-	var settings = new DotNetCorePackSettings
-	{
-		MSBuildSettings = buildSettings,
-		Configuration = "Release",
-		IncludeSource = true
-	};
-    DotNetCorePack("./AutoFixture.Optional/" + projectName + ".csproj", settings);
+  var buildSettings = new DotNetCoreMSBuildSettings()
+    .WithProperty("NuspecFile", $"../../nuget/{projectName}.nuspec")
+    .WithProperty("NuspecBasePath", "bin/Release");
+  var settings = new DotNetCorePackSettings
+  {
+    MSBuildSettings = buildSettings,
+    Verbosity = DotNetCoreVerbosity.Minimal,
+    Configuration = "Release",
+    IncludeSource = true,
+    IncludeSymbols = true,
+    OutputDirectory = "./nuget"
+  };
+  
+  DotNetCorePack($"./src/{projectName}/{projectName}.csproj", settings);
 }

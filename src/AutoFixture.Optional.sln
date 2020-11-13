@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Optional", "AutoFixture.Optional\AutoFixture.Optional.csproj", "{D838D0A8-440C-4243-B81E-560A89250C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Optional.Tests", "AutoFixture.Optional.Tests\AutoFixture.Optional.Tests.csproj", "{976F70B7-7E6E-447C-8BEE-094B1689A02F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D838D0A8-440C-4243-B81E-560A89250C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D838D0A8-440C-4243-B81E-560A89250C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D838D0A8-440C-4243-B81E-560A89250C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D838D0A8-440C-4243-B81E-560A89250C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976F70B7-7E6E-447C-8BEE-094B1689A02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976F70B7-7E6E-447C-8BEE-094B1689A02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976F70B7-7E6E-447C-8BEE-094B1689A02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976F70B7-7E6E-447C-8BEE-094B1689A02F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
