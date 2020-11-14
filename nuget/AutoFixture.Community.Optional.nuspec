@@ -10,21 +10,21 @@
     <repository type="git" url="https://github.com/Miista/AutoFixture.Optional.git" />
     <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>An AutoFixture relay that allows AutoFixture to create instances of Optional.</description>
+    <description>An AutoFixture customization that allows AutoFixture to create Optional specimens.</description>
     <copyright>Copyright 2020</copyright>
-    <tags>AutoFixture Community Optional OptionRelay Option</tags>
+    <tags>AutoFixture Community Optional Customization Relay Option</tags>
     <releaseNotes>Initial release</releaseNotes>
 
     <dependencies>
-      <group targetFramework="netstandard2.0">
-        <dependency id="AutoFixture" version="4.6.0" />
+      <group targetFramework="netstandard1.5">
+        <dependency id="AutoFixture" version="4.3.0" />
         <dependency id="Optional" version="4.0.0" />
       </group>
     </dependencies>
   </metadata>
 
   <files>
-    <file src="netstandard2.0\*.dll" target="lib\netstandard2.0" />
-    <file src="netstandard2.0\*.xml" target="lib\netstandard2.0" />
+    <file src="netstandard1.5\*.dll" target="lib\netstandard1.5" />
+    <file src="netstandard1.5\*.xml" target="lib\netstandard1.5" />
   </files>
 </package>

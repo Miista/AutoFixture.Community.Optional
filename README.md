@@ -2,6 +2,8 @@
 
 Creating optional specimens.
 
+Supports **.NET Core** (.NET Standard 1.5+)
+
 ## Installation
 
 ```
