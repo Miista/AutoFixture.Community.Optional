@@ -6,7 +6,7 @@ using Xunit;
 
 namespace AutoFixture.Community.Optional.Tests
 {
-    public class OptionRelayTests
+    public class OptionalCustomizationTests
     {
         [Theory]
         [MemberData(nameof(Can_create_option_Data))]
@@ -14,8 +14,7 @@ namespace AutoFixture.Community.Optional.Tests
         public void Can_create_option<T>(T dummy)
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new OptionRelay());
+            var fixture = new Fixture().Customize(new OptionalCustomization());
 
             Option<T> createdValue = default;
             

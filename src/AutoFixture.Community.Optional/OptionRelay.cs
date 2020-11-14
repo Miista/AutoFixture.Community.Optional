@@ -4,10 +4,9 @@ using System.Reflection;
 using AutoFixture.Kernel;
 using Optional;
 
-// ReSharper disable once CheckNamespace
-namespace AutoFixture
+namespace AutoFixture.Community.Optional
 {
-    public class OptionRelay : ISpecimenBuilder
+    internal class OptionRelay : ISpecimenBuilder
     {
         public object Create(object request, ISpecimenContext context)
         {
