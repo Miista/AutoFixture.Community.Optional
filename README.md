@@ -1,4 +1,4 @@
-# AutoFixture.Optional
+# AutoFixture.Community.Optional
 
 Creating optional specimens.
 
