@@ -23,10 +23,29 @@ namespace AutoFixture.Community.Optional.Tests
 
             // Assert
             act.Should().NotThrow();
+            createdValue.HasValue.Should().BeTrue(because: "an Optional was generated");
+            var value = createdValue.ValueOr(() => throw new Exception());
+            value.Should().BeOfType<T>();
+        }
+        
+        [Fact]
+        public void Can_create_optional_decimal()
+        {
+            // Arrange
+            var fixture = new Fixture().Customize(new OptionalCustomization());
+
+            Option<decimal> createdValue = default;
+            
+            // Act
+            Action act = () => createdValue = fixture.Create<Option<decimal>>();
+
+            // Assert
+            act.Should().NotThrow();
             createdValue.HasValue.Should().BeTrue();
         }
 
         // ReSharper disable once InconsistentNaming
+        // ReSharper disable once MemberCanBePrivate.Global
         public static IEnumerable<object[]> Can_create_option_Data
         {
             get
