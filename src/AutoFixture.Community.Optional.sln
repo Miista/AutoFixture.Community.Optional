@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Optional", "AutoFixture.Optional\AutoFixture.Optional.csproj", "{D838D0A8-440C-4243-B81E-560A89250C56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.Optional", "AutoFixture.Community.Optional\AutoFixture.Community.Optional.csproj", "{D838D0A8-440C-4243-B81E-560A89250C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Optional.Tests", "AutoFixture.Optional.Tests\AutoFixture.Optional.Tests.csproj", "{976F70B7-7E6E-447C-8BEE-094B1689A02F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.Optional.Tests", "AutoFixture.Community.Optional.Tests\AutoFixture.Community.Optional.Tests.csproj", "{976F70B7-7E6E-447C-8BEE-094B1689A02F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

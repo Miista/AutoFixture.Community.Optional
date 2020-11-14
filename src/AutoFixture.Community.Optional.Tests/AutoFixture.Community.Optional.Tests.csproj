@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoFixture.Optional\AutoFixture.Optional.csproj" />
+    <ProjectReference Include="..\AutoFixture.Community.Optional\AutoFixture.Community.Optional.csproj" />
   </ItemGroup>
 
 </Project>

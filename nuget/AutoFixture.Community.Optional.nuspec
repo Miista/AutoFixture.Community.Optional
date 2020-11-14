@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-	<id>AutoFixture.Optional</id>
+	<id>AutoFixture.Community.Optional</id>
 	<version>1.0.0-alpha</version>
 	<title>AutoFixture: Creating Optionals</title>
     <authors>Søren Guldmund</authors>
@@ -10,7 +10,7 @@
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<description>An AutoFixture relay that allows AutoFixture to create instances of Optional.</description>
 	<copyright>Copyright 2020</copyright>
-	<tags>AutoFixture Optional OptionRelay</tags>
+	<tags>AutoFixture Community Optional OptionRelay</tags>
 
     <dependencies>
 	  <group targetFramework="netstandard2.0">

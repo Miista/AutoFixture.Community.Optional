@@ -4,7 +4,7 @@ using FluentAssertions;
 using Optional;
 using Xunit;
 
-namespace AutoFixture.Optional.Tests
+namespace AutoFixture.Community.Optional.Tests
 {
     public class OptionRelayTests
     {
