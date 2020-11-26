@@ -4,6 +4,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.Optio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.Optional.Tests", "AutoFixture.Community.Optional.Tests\AutoFixture.Community.Optional.Tests.csproj", "{976F70B7-7E6E-447C-8BEE-094B1689A02F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{C3148CAF-ECC4-402C-8661-B1F39F29C3D6}"
+ProjectSection(SolutionItems) = preProject
+	..\nuget\AutoFixture.Community.Optional.nuspec = ..\nuget\AutoFixture.Community.Optional.nuspec
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
