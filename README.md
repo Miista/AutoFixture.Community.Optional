@@ -1,3 +1,7 @@
+<!--[![Build status](https://dev.azure.com/palmund/Typesafe.With/_apis/build/status/Typesafe.With)](https://dev.azure.com/palmund/Typesafe.With/_build/latest?definitionId=9)-->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![NuGet version](https://badge.fury.io/nu/AutoFixture.Community.Optional.svg)](https://www.nuget.org/packages/AutoFixture.Community.Optional)
+
 # AutoFixture.Community.Optional
 
 Creating optional specimens.
